@@ -2,11 +2,150 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title> City of Sedona </title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="main-header">
+        <nav class="main-navigation">
+          <ul class="nav-list">
+            <li> 
+              <a href="#"> Информация </a>
+            </li>
+            <li> 
+              <a href="#"> Фото и видео </a>
+            </li>
+            <li> 
+              <a href="#"> Карта штата   </a> 
+            </li>
+            <li>
+              <a href="#"> Гостиницы </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-logo">
+          <img src="#" width="" height="" alt="City_of_Sedona">
+        </div>
+    </header>
 
+    <main class="container">
+      <div class="main-photo">
+        <img src="#" width="" height="" alt="Welcome_to_Sedona">
+      </div>
+
+      <article class="tagline">
+        <h2> СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <p> РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+      </article>
+        
+      <article class="text">
+        <section class="text-1">
+          <h1> НАСТОЯЩИЙ ГОРОДОК </h1>
+          <p> - №1 - </p>
+          <p> СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ </p>
+        </section> 
+        <section class="photo-1">
+          <img src="#" width="" height="" alt="Real_City">
+        </section>
+      </article>
+
+      <section class="features">
+        <div class="features-item">
+          <img src="#" width="" height="" alt="Home">
+          <h2> ЖИЛЬЕ </h2>
+          <p> РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО! </p>
+        </div>
+        <div>
+          <img src="#" width="" height="" alt="Food">
+          <h2> ЕДА </h2>
+          <p> ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ! </p>
+        </div>
+        <div>
+          <img src="#" width="" height="" alt="Souvenirs">
+          <h2> СУВЕНИРЫ</h2>
+          <p> НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА </p>
+        </div>
+      </section>
+
+      <article class="text">
+        <section class="photo-2">
+          <img src="#" width="" height="" alt="Devil-Bridge">
+        </section>
+        <section class="text-2">
+          <h1> ТАМ ТОЖЕ ЕСТЬ <br> МОСТ ДЬЯВОЛА </h1>
+          <p> - №2 - </p>
+          <p> ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ! </p>
+        </section>
+      </article>
+
+      <section class="small-texts">
+        <div class="text-3">
+          <h2> НЕБОЛЬШАЯ ПЛОЩАДЬ </h2>
+          <p> - №3 - </p>
+          <p> ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+        </div>
+        <div class="text-4">
+          <h2> КРАСИВАЯ ДОРОГА </h2>
+          <p> - №4 - </p>
+          <p> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+        </div>
+        <div class="text-5">
+          <h2> МАЛО ТУРИСТОВ </h2>
+          <p> - №5 - </p>
+          <p> БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ </p>
+        </div>
+      </section>
+
+      <section class="more">
+        <h1> ЗАИНТЕРЕСОВАЛИСЬ? </h1>
+        <p> УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ </p>
+      </section>
+<!-- map picture - <map>? or that not really important? -->
+      <div class="map">
+        <img src="#" width="" height="" alt="Карта">
+      </div>
+
+<!-- popup window -->
+      <div class="pop-up">
+        <div class="search-for-hotel">
+          <button class="btn" type="submit"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        </div>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+          <!-- как добавить значок календаря? -->
+            <label for="enter-date">ДАТА ЗАЕЗДА:</label>
+            <input type="text" name="date" id="enter-date" placeholder="24 АПРЕЛЯ 2017">
+
+            <label for="exit-date">ДАТА ВЫЕЗДА:</label>
+            <input type="text" name="date" id="exit-date" placeholder="4 ИЮЛЯ 2017">
+
+<!-- ВЗРОСЛЫЕ - можно название такой формы записи- не знаю что по теории искать -->
+
+<!-- ДЕТИ -->
+
+
+            <input type="submit" value="НАЙТИ">
+          </form>
+        </div>
+      </div>
+
+
+    </main>
+      <!-- footer -->
+    <footer class="main-footer">
+      <section class="site-tag">
+        <h2> #VISITSEDONA </h2>
+      </section>
+      <span class="footer-social">
+        <a class="social-btn social-btn-twit" href="#">twitter</a>
+        <a class="social-btn social-btn-fb" href="#">facebook</a>
+        <a class="social-btn social-btn-yt" href="#">youtube</a>
+      </span>
+      <span class="footer-copyright">
+        <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="#" width="" height="" alt="HTMLAcademy">
+        </a>
+      </span>
+    </footer>
   </body>
 </html>
