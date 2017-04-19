@@ -182,3 +182,26 @@ input[type="submit"]{
   line-height: 1.857;
   text-align: center;
 }
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook {
+    width: 46px;
+    height: 48px;
+    background-position: -5px -5px;
+}
+
+.sprite-twit {
+    width: 46px;
+    height: 48px;
+    background-position: -61px -5px;
+}
+
+.sprite-youtube {
+    width: 46px;
+    height: 48px;
+    background-position: -117px -5px;
+}
