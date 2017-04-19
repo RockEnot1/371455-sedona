@@ -182,29 +182,7 @@ input[type="submit"]{
   line-height: 1.857;
   text-align: center;
 }
-.sprite-social {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
 
-.sprite-facebook {
-    width: 46px;
-    height: 48px;
-    background-position: -5px -5px;
-}
-
-.sprite-twit {
-    width: 46px;
-    height: 48px;
-    background-position: -61px -5px;
-}
-
-.sprite-youtube {
-    width: 46px;
-    height: 48px;
-    background-position: -117px -5px;
-}
 
 /*inner.html*/
  .search-panel h2{
@@ -272,52 +250,3 @@ input[type="submit"]{
   line-height: 1.5;
   text-align: center;
 }
-/*sprite for empty checkbox
-.sprite-empty {
-    background-image: url(../img/emptycheck-sprite.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-empty-block {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -5px;
-}
-
-.sprite-empty-peace {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -37px;
-}
-
-.sprite-empty-pointing {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -69px;
-}*/
-
-/*sprite for marked checkbox*/
-/*.sprite-mark {
-    background-image: url(../img/markcheck-sprite.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-mark-block {
-    width: 26px;
-    height: 22px;
-    background-position: -5px -5px;
-}
-
-.sprite-mark-peace {
-    width: 26px;
-    height: 22px;
-    background-position: -5px -37px;
-}
-
-.sprite-mark-pointing {
-    width: 26px;
-    height: 22px;
-    background-position: -5px -69px;
-}*/
