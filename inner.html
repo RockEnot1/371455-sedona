@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title> City of Sedona </title>
+     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
 
@@ -24,13 +26,21 @@
           </ul>
         </nav>
         <div class="logo">
-          <img src="index.html" width="" height="" alt="City_of_Sedona">
+          <img src="img/logo.png" width="138" height="70" alt="City_of_Sedona">
         </div>
     </header>
 
     <main class="container">
       <section class="search-panel">
         <form action="https://echo.htmlacademy.ru" method="get">
+        <!-- html for sprite 
+        <i class="sprite-empty sprite-empty-block"></i>
+        <i class="sprite-empty sprite-empty-peace"></i>
+        <i class="sprite-empty sprite-empty-pointing"></i>
+
+        <i class="sprite-mark sprite-mark-block"></i>
+        <i class="sprite-mark sprite-mark-peace"></i>
+        <i class="sprite-mark sprite-mark-pointing"></i> -->
         <div class="infrastructure">
           <h2>Инфраструктура:</h2>
             <label>
@@ -39,7 +49,7 @@
             <label>
               <input type="checkbox" checked name="infrastructure">Парковка
             </label>
-           <label>
+            <label>
               <input type="checkbox" checked name="infrastructure">Wi-Fi
             </label>
         </div>
@@ -57,11 +67,11 @@
         </div>
         <div class="price">
         <h2>Стоимость в сутки:</h2>
-        <!-- слайдер 
+        <<!--  слайдер  
 
-        <input type="range" min="0" max="3000" step="100" value="50"
+        <input type="range" min="0" max="3000" step="100" value="50" -->
 
-        -->
+       
           <input type="submit" value="ПОКАЗАТЬ">
         </div>
         </form>
@@ -98,7 +108,7 @@
 
       <article class="hotel">
         <div class="image">
-          <img src="#" width="" height="" alt="Amara_resort_and_spa">  
+          <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara_resort_and_spa">  
         </div>
         <div class="about">
           <h1><a href="#">AMARA RESORT &amp; SPA</a></h1>
@@ -113,7 +123,7 @@
 
       <article class="hotel">
         <div class="image">
-          <img src="#" width="" height="" alt="DESERT_QUAIL_INN">  
+          <img src="img/desert-quail.jpg" width="135" height="90" alt="DESERT_QUAIL_INN">  
         </div>
         <div class="about">
           <h2>DESERT QUAIL INN</h2>
@@ -128,7 +138,7 @@
 
       <article class="hotel">
         <div class="image">
-          <img src="#" width="" height="" alt="Villas_at_poco_diablo">  
+          <img src="img/villas-diablo.jpg" width="135" height="90" alt="Villas_at_poco_diablo">  
         </div>
         <div class="about">
           <h2>VILLAS AT POCO DIABLO</h2>
@@ -141,19 +151,25 @@
         </div>
       </article>
     </main>
-      <!-- footer -->
-    <footer class="footer">
+      <!-- footer  -->
+     <footer class="footer">
       <div class="site-tag">
         <a class="hashtag" href="#"> #VISITSEDONA </a>
       </div>
       <div class="footer-social">
-        <a class="social-btn social-btn-twit" href="#">twitter</a>
-        <a class="social-btn social-btn-fb" href="#">facebook</a>
-        <a class="social-btn social-btn-yt" href="#">youtube</a>
+        <a class="social-btn social-btn-twit" href="#">
+          <i class="sprite-social sprite-facebook"></i>
+        </a>
+        <a class="social-btn social-btn-fb" href="#">
+          <i class="sprite-social sprite-twit"></i>
+        </a>
+        <a class="social-btn social-btn-yt" href="#">
+          <i class="sprite-social sprite-youtube"></i>
+        </a>
       </div>
       <div class="copyright">
-        <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="#" width="" height="" alt="HTMLAcademy">
+        <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">Website by
+          <img src="img/academy.png" width="113" height="39" alt="HTMLAcademy">
         </a>
       </div>
     </footer>
