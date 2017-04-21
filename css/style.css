@@ -1,49 +1,49 @@
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+.container{
+	width: 1200px;
+	margin: o auto;
+}
 
 .header{
-	margin-bottom: 10px;
+	width: 1200px;
 }
 .navigation{
 	width:1200px;
-	padding: 0 10px;
-	margin: 0 auto;
 }
 
 .nav-list{
-	width: 1180px;
-	margin:0 auto;
+	width: 1200px;
+	vertical-align: bottom;
 }
 .information{
 float: left;
-width: auto;
-margin:auto;
-padding: 15px 72px
+width: 240px;
 }
-.photo{
+.photos{
 float: left;
-width: auto;
-margin:auto;
-padding: 15px 69px;
+width: 240px;
 }
 .statemap{
-float: right;
-width: auto;
-margin:auto;
-padding: 15px 75px;
+float: left;
+width: 240px;
+
 }
 .hotels{
 float: right;
-width: auto;
-margin:auto;
-padding: 15px 75px;
+width: 240px;
 }
-.container{
-	clear: both;
+.photo{
+	width:1200px; 
 }
-
 .tagline{
 	margin: 0 auto;
-	padding: 301px;
-	width: 578px;
+	width: 1200px;
+	min-height: 215px;
 }
 .features-blue .reason-item{
 	float:left;
@@ -69,16 +69,20 @@ padding: 15px 75px;
 	margin-right: 0;
 }
 .more{
-	margin: 0 auto;
-	padding: 315px;
-	width: 570px;
+	width: 1200px;
 }
 .map{
 	width: 1200px;
 	min-height: 600px;
 }
 /*what we need to do with pop-up?*/
-
+.pop-up{
+	width: 570px;
+	margin: auto;
+}
+.footer{
+	width: 1200px;
+}
 .site-tag{
 	float: left;
 	width: 400px;
@@ -97,7 +101,6 @@ body{
 	text-transform: uppercase;
 	font-family: "PTSans";
 	min-width: 1200px;
-    min-height: 2762px;
     margin: 0;
     padding: 0;
 }
