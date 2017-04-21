@@ -1,3 +1,10 @@
+body{
+	text-transform: uppercase;
+	font-family: "PTSans";
+	min-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
 .clearfix::after {
   content: "";
 
@@ -6,116 +13,31 @@
 }
 .container{
 	width: 1200px;
-	margin: o auto;
+	margin-left:40px;
 }
-
 .header{
 	width: 1200px;
+	margin-bottom: 0;
 }
 .navigation{
 	width:1200px;
 }
-
-.nav-list{
-	width: 1200px;
-	vertical-align: bottom;
-}
-.information{
-float: left;
-width: 240px;
-}
-.photos{
-float: left;
-width: 240px;
-}
-.statemap{
-float: left;
-width: 240px;
-
-}
-.hotels{
-float: right;
-width: 240px;
-}
-.photo{
-	width:1200px; 
-}
-.tagline{
-	margin: 0 auto;
-	width: 1200px;
-	min-height: 215px;
-}
-.features-blue .reason-item{
-	float:left;
-	width: 400px;
-}
-.features-blue .reason-image{
-	float: left;
-	width: 800px;
-}
-.advantages-item{
-	float: left;
-	width: 400px;
-}
-.advantages-item:last-child{
-	margin-right: 0;
-}
-.features-grey .reason-item{
-	float:left;
-	width: 400px;
-}
-
-.features-grey .reason-item:last-child{
-	margin-right: 0;
-}
-.more{
-	width: 1200px;
-}
-.map{
-	width: 1200px;
-	min-height: 600px;
-}
-/*what we need to do with pop-up?*/
-.pop-up{
-	width: 570px;
-	margin: auto;
-}
-.footer{
-	width: 1200px;
-}
-.site-tag{
-	float: left;
-	width: 400px;
-}
-.footer-social{
-	float: left;
-	width: 400px;
-}
-.copyright{
-	float: left;
-	width: 400px;
-}
-
-
-body{
-	text-transform: uppercase;
-	font-family: "PTSans";
-	min-width: 1200px;
-    margin: 0;
-    padding: 0;
-}
-
 .nav-list {
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
 	text-align: right;
-	vertical-align: middle;
 	line-height: normal;
+	background-color: rgb(255,255,255);
+	width: 1200px;
+	vertical-align: bottom;
+	list-style-type: none;
 }
-
-/*text-align = left но в браузере все равно по вертикали стоят все li*/
-ul .position-left {
+.nav-list a{
+	color:rgb(0,0,0);
+	text-decoration: none;
+}
+ul{
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
@@ -123,14 +45,24 @@ ul .position-left {
 	vertical-align: middle;
 	line-height: normal;	
 }
-.tagline p{
-  font-size: 14px;
-  color: rgb(51, 51, 51);
-  line-height: 1.857;
-  text-align: center;
-  vertical-align: middle;
+.menu-item{
+	width: 240px;
+	text-align: right;
+	float: left;
 }
-
+.menu-item::nth-child(3) {
+margin-left: 240px;
+}
+.photo{
+	width:1200px; 
+	position: relative;
+}
+.tagline{
+	width: 600px;
+	position: absolute;
+	bottom: 10px;
+	padding:59px 312px 51px 312px;
+}
 .tagline h2{
   font-size: 21px;
   color: rgb(0, 0, 0);
@@ -139,35 +71,83 @@ ul .position-left {
   text-align: center;
   vertical-align: middle;
 }
-.features-blue h2{
+
+.tagline p{
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 1.857;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.features-blue .reason-item{
+	float:left;
+	width: 295px;
+	background-color: rgb(129, 179, 210);
+	padding: 50px 50px 60px 55px;
+}
+.features-blue .reason-image{
+	float: left;
+	width: 800px;
+}
+.reason-item h2{
   font-size: 21px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1;
   text-align: center;
 }
-
-/*не видно так как нет фона*/
-.features-blue p{
+.reason-item p{
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-align: center;
   vertical-align: middle;
 }
-/*не видно так как нет фона*/
-.features-blue span{
+.reason-item span{
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-align: center;
   vertical-align: middle;
+}
+.advantages-item{
+	float: left;
+	width: 310px;
+	padding: 160px 45px 82px 45px;
+}
+.advantages-item:last-child{
+	margin-right: 0;
+}
+.advantages-item h2{
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center; 
+  vertical-align: middle;
+}
+.advantages-item p{
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight:normal;
+  text-align: center; 
+}
+.features-grey .reason-item{
+	float:left;
+	width: 400px;
+	width: 295px;
+	background-color: rgb(238, 238, 238);
+	padding: 50px 50px 60px 55px;
+}
+.features-grey .reason-item:last-child{
+	margin-right: 0;
 }
 .features-grey h2{
-	font-size: 14px;
+	font-size: 21px;
   color: rgb(51, 51, 51);
+  font-weight: bold;
   text-align: center;
-  vertical-align: middle; 
+  vertical-align: middle;
+  line-height: 1; 
 }
-
 .features-grey p{
   font-size: 14px;
   color: rgb(51, 51, 51);
@@ -180,21 +160,9 @@ ul .position-left {
   text-align: center;
   vertical-align: middle;
 }
-.advantages-item h2{
- font-size: 21px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-align: center; 
-
+.more{
+	width: 1200px;
 }
-
-.advantages-item p{
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-  font-weight:normal;
-  text-align: center; 
-}
-
 .more h3{
   font-size: 30px;
   color: rgb(0, 0, 0);
@@ -207,33 +175,53 @@ ul .position-left {
   font-weight: normal;
   text-align: center;
 }
-/*/*не видно так как нет фона*/
 .more a{
   font-size: 21px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
 }
-
-label{
+.search{
+	width: 300px;
+	margin-left: 315px;
+	margin-right: 315px;
+	padding: 33px 135px 30px 135px;
+	background-color: rgb(118, 99, 87);
+}
+.map{
+	width: 1200px;
+}
+.pop-up{
+	width: 570px;
+	margin: auto;
+}
+.pop-up label{
   font-size: 14px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: left;
 }
-
-input{
+.pop-up input{
   font-size: 14px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: left;
 }
-input[type="submit"]{
+.pop-up input[type="submit"]{
   font-size: 21px;
   color:rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.238;
   text-align: center;
+}
+.footer{
+	width: 1200px;
+	vertical-align: bottom;
+}
+.site-tag{
+	float: left;
+	width: 142px;
+	padding: 50px 129px 50px 129px;
 }
 .site-tag a{
   font-size: 21px;
@@ -242,12 +230,22 @@ input[type="submit"]{
   line-height: 1.2;
   text-align: center;
 }
-
+.footer-social{
+	float: left;
+	width: 150px;
+	padding: 35px 125px;
+}
+.copyright{
+	float: left;
+	width: 200px;
+	padding: 40px 100px;
+}
 .copyright a{
   font-size: 14px;
   color: rgb(0, 0, 0);
   line-height: 1.857;
   text-align: center;
+  text-decoration: none;
 }
 
 
