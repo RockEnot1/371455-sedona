@@ -1,9 +1,111 @@
+
+.header{
+	margin-bottom: 10px;
+}
+.navigation{
+	width:1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.nav-list{
+	width: 1180px;
+	margin:0 auto;
+}
+.information{
+float: left;
+width: auto;
+margin:auto;
+padding: 15px 72px
+}
+.photo{
+float: left;
+width: auto;
+margin:auto;
+padding: 15px 69px;
+}
+.statemap{
+float: right;
+width: auto;
+margin:auto;
+padding: 15px 75px;
+}
+.hotels{
+float: right;
+width: auto;
+margin:auto;
+padding: 15px 75px;
+}
+.container{
+	clear: both;
+}
+
+.tagline{
+	margin: 0 auto;
+	padding: 301px;
+	width: 578px;
+}
+.features-blue .reason-item{
+	float:left;
+	width: 400px;
+}
+.features-blue .reason-image{
+	float: left;
+	width: 800px;
+}
+.advantages-item{
+	float: left;
+	width: 400px;
+}
+.advantages-item:last-child{
+	margin-right: 0;
+}
+.features-grey .reason-item{
+	float:left;
+	width: 400px;
+}
+
+.features-grey .reason-item:last-child{
+	margin-right: 0;
+}
+.more{
+	margin: 0 auto;
+	padding: 315px;
+	width: 570px;
+}
+.map{
+	width: 1200px;
+	min-height: 600px;
+}
+/*what we need to do with pop-up?*/
+
+.site-tag{
+	float: left;
+	width: 400px;
+}
+.footer-social{
+	float: left;
+	width: 400px;
+}
+.copyright{
+	float: left;
+	width: 400px;
+}
+
+
+body{
+	text-transform: uppercase;
+	font-family: "PTSans";
+	min-width: 1200px;
+    min-height: 2762px;
+    margin: 0;
+    padding: 0;
+}
+
 .nav-list {
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	font-family: "PTSans";
 	text-align: right;
 	vertical-align: middle;
 	line-height: normal;
@@ -14,17 +116,13 @@ ul .position-left {
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	font-family: "PTSans";
 	text-align: left;
 	vertical-align: middle;
 	line-height: normal;	
 }
 .tagline p{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(51, 51, 51);
-  text-transform: uppercase;
   line-height: 1.857;
   text-align: center;
   vertical-align: middle;
@@ -32,20 +130,16 @@ ul .position-left {
 
 .tagline h2{
   font-size: 21px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.238;
   text-align: center;
   vertical-align: middle;
 }
 .features-blue h2{
   font-size: 21px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1;
   text-align: center;
 }
@@ -53,132 +147,102 @@ ul .position-left {
 /*не видно так как нет фона*/
 .features-blue p{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
 }
 /*не видно так как нет фона*/
 .features-blue span{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
 }
 .features-grey h2{
 	font-size: 14px;
-  font-family: "PTSans";
   color: rgb(51, 51, 51);
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle; 
 }
 
 .features-grey p{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(51, 51, 51);
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
 }
 .features-grey span{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(51, 51, 51);
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
 }
 .advantages-item h2{
  font-size: 21px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center; 
 
 }
 
 .advantages-item p{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight:normal;
-  text-transform: uppercase;
   text-align: center; 
 }
 
 .more h3{
   font-size: 30px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
 }
 .more p{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: normal;
-  text-transform: uppercase;
   text-align: center;
 }
 /*/*не видно так как нет фона*/
 .more a{
   font-size: 21px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
 }
 
 label{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   text-align: left;
 }
 
 input{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   text-align: left;
 }
 input[type="submit"]{
   font-size: 21px;
-  font-family: "PTSans";
   color:rgb(255, 255, 255);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.238;
   text-align: center;
 }
 .site-tag a{
   font-size: 21px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
 }
 
 .copyright a{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
-  text-transform: uppercase;
   line-height: 1.857;
   text-align: center;
 }
@@ -187,66 +251,52 @@ input[type="submit"]{
 /*inner.html*/
  .search-panel h2{
   font-size: 16px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.313;
   text-align: left;
  }
 
  .search-panel label{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
   line-height: 1.5;
   text-align: left;
  }
 
 .number-finded h2{
   font-size: 21px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.238;
   text-align: left;
 }
 
 .about h1{
   font-size: 21px;
-  font-family: "PTSans";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.238;
   text-align: left;
 }
 
 .about span{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(51, 51, 51);
-  text-transform: uppercase;
   line-height: 1.5;
   text-align: left;
 }
  .about a{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.5;
   text-align: left;
  }
 
 .rating span{
   font-size: 14px;
-  font-family: "PTSans";
   color: rgb(102, 102, 102);
-  text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
 }
