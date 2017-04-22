@@ -13,7 +13,7 @@ body{
 }
 .container{
 	width: 1200px;
-	margin-left:40px;
+	margin:0 auto;
 }
 .header{
 	width: 1200px;
@@ -26,12 +26,14 @@ body{
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
-	text-align: right;
+	text-align: center;
 	line-height: normal;
 	background-color: rgb(255,255,255);
 	width: 1200px;
-	vertical-align: bottom;
+	vertical-align: middle;
 	list-style-type: none;
+	margin:0;
+	padding: 0;
 }
 .nav-list a{
 	color:rgb(0,0,0);
@@ -50,12 +52,13 @@ ul{
 	text-align: right;
 	float: left;
 }
-.menu-item::nth-child(3) {
-margin-left: 240px;
+.menu-item::nth-child(2) {
+margin-right: 240px;
 }
 .photo{
 	width:1200px; 
 	position: relative;
+	margin: 0 auto;
 }
 .tagline{
 	width: 600px;
@@ -82,9 +85,9 @@ margin-left: 240px;
 
 .features-blue .reason-item{
 	float:left;
-	width: 295px;
+	width: 300px;
 	background-color: rgb(129, 179, 210);
-	padding: 50px 50px 60px 55px;
+	padding: 50px 50px 60px 50px;
 }
 .features-blue .reason-image{
 	float: left;
@@ -122,6 +125,9 @@ margin-left: 240px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center; 
+  vertical-align: middle;
+}
+.advantages-item img {
   vertical-align: middle;
 }
 .advantages-item p{
@@ -215,41 +221,56 @@ margin-left: 240px;
   text-align: center;
 }
 .footer{
-	width: 1200px;
-	vertical-align: bottom;
+  width: 1200px;
+  font-size: 0;
+  text-align: center;
 }
 .site-tag{
-	float: left;
-	width: 142px;
-	padding: 50px 129px 50px 129px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  font-size: 21px;
 }
 .site-tag a{
-  font-size: 21px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.2;
-  text-align: center;
 }
 .footer-social{
-	float: left;
-	width: 150px;
-	padding: 35px 125px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  font-size: 14px;
 }
 .copyright{
-	float: left;
-	width: 200px;
-	padding: 40px 100px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  font-size: 14px;
 }
 .copyright a{
-  font-size: 14px;
   color: rgb(0, 0, 0);
   line-height: 1.857;
-  text-align: center;
   text-decoration: none;
 }
-
+.copyright img {
+  vertical-align: middle;
+}
 
 /*inner.html*/
+.search-panel{
+	width: 1200px;
+	min-height: 220px;
+	background-image: url(../img/background-inner.jpg);
+}
+.search-item{
+	width: 300px;
+	text-align: right;
+	float: left;
+}
+.search-item::nth-child(2) {
+    margin-right: 200px;
+}
  .search-panel h2{
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -265,6 +286,10 @@ margin-left: 240px;
   text-align: left;
  }
 
+.finded {
+	width: 1200px;
+	background-color: rgb(255, 255, 255);
+}
 .number-finded h2{
   font-size: 21px;
   color: rgb(0, 0, 0);
@@ -272,9 +297,30 @@ margin-left: 240px;
   line-height: 1.238;
   text-align: left;
 }
+.hotel{
+	width: 1200px;
+	border-color: rgb(229, 229, 229);
+	border-width: 3px;
+}
+.image{
+	float: left;
+	width: 207px;
+	padding: 31px 0 31px 71px;
+}
 
-.about h1{
-  font-size: 21px;
+.about{
+	width: 260px;
+	float: left;
+	padding: 28px 131px 28px 31px;
+}
+.rating{
+	float: right;
+	width: 111px;
+	padding: 28px 60px 31px 329px;
+}
+
+.about h2{
+  font-size: 20px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.238;
@@ -299,5 +345,5 @@ margin-left: 240px;
   font-size: 14px;
   color: rgb(102, 102, 102);
   line-height: 1.5;
-  text-align: center;
+  text-align: right;
 }

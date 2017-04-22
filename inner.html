@@ -7,20 +7,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <header class="header">
+    <div class="container">
+      <header class="header clearfix">
         <nav class="navigation">
           <ul class="nav-list">
-            <li> 
+            <li class="menu-item"> 
               <a href="index.html">Информация</a>
             </li>
-            <li> 
+            <li class="menu-item"> 
               <a href="#">Фото и видео</a>
             </li>
-            <li> 
+            <li class="menu-item"> 
               <a href="#">Карта штата</a> 
             </li>
-            <li>
+            <li class="menu-item">
               <a name="hotels">Гостиницы</a>
             </li>
           </ul>
@@ -28,12 +28,11 @@
         <div class="logo">
           <img src="img/logo.png" width="138" height="70" alt="City_of_Sedona">
         </div>
-    </header>
+      </header>
 
-    <main class="container">
-      <section class="search-panel">
+      <section class="search-panel clearfix">
         <form action="https://echo.htmlacademy.ru" method="get">
-        <div class="infrastructure">
+        <div class="search-item">
           <h2>Инфраструктура:</h2>
             <label>
               <input type="checkbox" name="infrastructure" checked>Бассейн
@@ -45,7 +44,7 @@
               <input type="checkbox" checked name="infrastructure">Wi-Fi
             </label>
         </div>
-        <div class="house-type">
+        <div class="search-item">
           <h2>Тип жилья:</h2>
           <label>
             <input type="checkbox" name="house-type" checked>Гостиница
@@ -57,9 +56,9 @@
             <input type="checkbox" name="house-type" checked>Апартаменты
           </label>
         </div>
-        <div class="price">
+        <div class="search-item">
         <h2>Стоимость в сутки:</h2>
-        <<!--  слайдер  
+        <!--  слайдер  
 
         <input type="range" min="0" max="3000" step="100" value="50" -->
 
@@ -68,7 +67,7 @@
         </div>
         </form>
       </section>
-      <section class="finded">
+      <section class="finded clearfix">
          <div class="number-finded">
            <h2>Найдено:3</h2>
          </div>
@@ -98,13 +97,13 @@
          </div>
       </section>
 
-      <article class="hotel">
+      <article class="hotel clearfix">
         <div class="image">
           <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara_resort_and_spa">  
         </div>
         <div class="about">
-          <h1><a href="#">AMARA RESORT &amp; SPA</a></h1>
-          <span>ГОСТИНИЦА</span> <span>ОТ 4000 Р.</span><
+          <h2>AMARA RESORT &amp; SPA</h2>
+          <span>ГОСТИНИЦА</span> <span>ОТ 4000 Р.</span>
            <a class="btn" href="#">Подробнее</a>
            <a class="btn" href="#">Забронировать</a>
         </div>
@@ -113,7 +112,7 @@
         </div>
       </article>
 
-      <article class="hotel">
+      <article class="hotel clearfix">
         <div class="image">
           <img src="img/desert-quail.jpg" width="135" height="90" alt="DESERT_QUAIL_INN">  
         </div>
@@ -128,7 +127,7 @@
         </div>
       </article>
 
-      <article class="hotel">
+      <article class="hotel clearfix">
         <div class="image">
           <img src="img/villas-diablo.jpg" width="135" height="90" alt="Villas_at_poco_diablo">  
         </div>
@@ -142,25 +141,25 @@
           <span> Рейтинг:8,9</span>
         </div>
       </article>
-    </main>
       <!-- footer  -->
-     <footer class="footer">
-      <div class="site-tag">
-        <a class="hashtag" href="#"> #VISITSEDONA </a>
-      </div>
-      <div class="footer-social">
-        <a class="social-btn social-btn-twit" href="#">
-        </a>
-        <a class="social-btn social-btn-fb" href="#">
-        </a>
-        <a class="social-btn social-btn-yt" href="#">
-        </a>
-      </div>
-      <div class="copyright">
-        <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">Website by
+      <footer class="footer">
+        <div class="site-tag">
+          <a class="hashtag" href="#"> #VISITSEDONA </a>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-twit" href="#">twitter
+          </a>
+          <a class="social-btn social-btn-fb" href="#">facebook
+          </a>
+          <a class="social-btn social-btn-yt" href="#">youtube
+          </a>
+        </div>
+        <div class="copyright">
+          <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">Website by
           <img src="img/academy.png" width="113" height="39" alt="HTMLAcademy">
-        </a>
-      </div>
-    </footer>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
