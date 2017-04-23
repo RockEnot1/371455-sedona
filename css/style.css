@@ -285,10 +285,10 @@ margin-right: 240px;
   line-height: 1.5;
   text-align: left;
  }
-
 .finded {
 	width: 1200px;
 	background-color: rgb(255, 255, 255);
+	padding: 40px 70px;
 }
 .number-finded h2{
   font-size: 21px;
@@ -296,37 +296,48 @@ margin-right: 240px;
   font-weight: bold;
   line-height: 1.238;
   text-align: left;
+  float: left;
+  width: 120px;
+  padding-right:48px;
+}
+.sorting{
+	float: left;
+	width: 360px;
+	padding-right: 420px;
+}
+.slider{
+	float: left;
+	width: 111px;
 }
 .hotel{
 	width: 1200px;
 	border-color: rgb(229, 229, 229);
 	border-width: 3px;
+	padding: 30px  70px; 
 }
 .image{
 	float: left;
-	width: 207px;
-	padding: 31px 0 31px 71px;
+	width: 135px;
+	padding-right: 31px;
 }
-
 .about{
 	width: 260px;
 	float: left;
-	padding: 28px 131px 28px 31px;
+	padding-right: 520px
 }
 .rating{
-	float: right;
+	float: left;
 	width: 111px;
-	padding: 28px 60px 31px 329px;
 }
-
 .about h2{
   font-size: 20px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.238;
   text-align: left;
+  margin:0;
+  padding: 0;
 }
-
 .about span{
   font-size: 14px;
   color: rgb(51, 51, 51);
@@ -340,7 +351,16 @@ margin-right: 240px;
   line-height: 1.5;
   text-align: left;
  }
-
+ .btn-blue{
+ 	background-color: rgb(129, 179, 210);
+ 	text-decoration: none;
+ 	padding: 7px 15px;
+ }
+ .btn-brown{
+ 	background-color: rgb(118, 99, 87);
+ 	text-decoration: none;
+ 	padding: 7px 15px;
+ }
 .rating span{
   font-size: 14px;
   color: rgb(102, 102, 102);
