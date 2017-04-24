@@ -1,13 +1,13 @@
 body{
 	text-transform: uppercase;
-	font-family: "PTSans";
+	font-family: "PT Sans";
 	min-width: 1200px;
     margin: 0;
     padding: 0;
+    color: rgb(254, 254, 254);
 }
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
