@@ -14,6 +14,7 @@ body{
 .container{
 	width: 1200px;
 	margin:0 auto;
+	box-shadow: 
 }
 .header{
 	width: 1200px;
@@ -263,14 +264,6 @@ margin-right: 240px;
 	min-height: 220px;
 	background-image: url(../img/background-inner.jpg);
 }
-.search-item{
-	width: 300px;
-	text-align: right;
-	float: left;
-}
-.search-item::nth-child(2) {
-    margin-right: 200px;
-}
  .search-panel h2{
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -278,15 +271,22 @@ margin-right: 240px;
   line-height: 1.313;
   text-align: left;
  }
-
  .search-panel label{
   font-size: 14px;
   color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: left;
  }
+ .search-item{
+	width: 300px;
+	text-align: right;
+	float: left;
+}
+.search-item::nth-child(2) {
+    margin-right: 300px;
+}
 .finded {
-	width: 1200px;
+	width: 1060px;
 	background-color: rgb(255, 255, 255);
 	padding: 40px 70px;
 }
@@ -304,13 +304,13 @@ margin-right: 240px;
 	float: left;
 	width: 360px;
 	padding-right: 420px;
-}
+} 
 .slider{
 	float: left;
 	width: 111px;
 }
 .hotel{
-	width: 1200px;
+	width: 1060px;
 	border-color: rgb(229, 229, 229);
 	border-width: 3px;
 	padding: 30px  70px; 
@@ -325,9 +325,22 @@ margin-right: 240px;
 	float: left;
 	padding-right: 520px
 }
+.hotel-type{
+    width: 118px;
+    float: left;
+    margin-right: 8px;
+}
+.price{
+    width: 134px;
+    float: left;
+}
+.price a{
+	box-shadow: 0 0 20px;
+}
 .rating{
 	float: left;
 	width: 111px;
+	background-color: rgb(242, 242, 242);
 }
 .about h2{
   font-size: 20px;
