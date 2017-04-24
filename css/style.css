@@ -14,12 +14,9 @@ body{
 .container{
 	width: 1200px;
 	margin:0 auto;
-	box-shadow: 
+	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2); 
 }
-.header{
-	width: 1200px;
-	margin-bottom: 0;
-}
+
 .navigation{
 	width:1200px;
 }
@@ -27,45 +24,42 @@ body{
 	font-size: 14px;
 	font-weight: bold;
 	color: rgb(0, 0, 0);
-	text-align: center;
-	line-height: normal;
+	line-height: 1.857;
 	background-color: rgb(255,255,255);
-	width: 1200px;
-	vertical-align: middle;
 	list-style-type: none;
-	margin:0;
-	padding: 0;
+
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 70px;
 }
 .nav-list a{
 	color:rgb(0,0,0);
 	text-decoration: none;
 }
-ul{
-	font-size: 14px;
-	font-weight: bold;
-	color: rgb(0, 0, 0);
-	text-align: left;
-	vertical-align: middle;
-	line-height: normal;	
-}
 .menu-item{
+	display: block;
+	width: 33%;
+}
+.menu-item:nth-child(2) {
+    margin-right: 240px;
+}
+.logo{
 	width: 240px;
-	text-align: right;
-	float: left;
 }
-.menu-item::nth-child(2) {
-margin-right: 240px;
-}
+
 .photo{
 	width:1200px; 
 	position: relative;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 .tagline{
 	width: 600px;
 	position: absolute;
 	bottom: 10px;
-	padding:59px 312px 51px 312px;
+	padding:55px 300px 55px 300px;
 }
 .tagline h2{
   font-size: 21px;
@@ -83,15 +77,21 @@ margin-right: 240px;
   text-align: center;
   vertical-align: middle;
 }
-
+.features-blue{
+	display: flex;
+	width: 1200px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
 .features-blue .reason-item{
-	float:left;
-	width: 300px;
+	display: block;
+	width: 310px;
 	background-color: rgb(129, 179, 210);
-	padding: 50px 50px 60px 50px;
+	padding: 50px 45px 40px 45px;
 }
 .features-blue .reason-image{
-	float: left;
+	display: block;
 	width: 800px;
 }
 .reason-item h2{
@@ -105,18 +105,26 @@ margin-right: 240px;
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-align: center;
+  line-height: 1;
   vertical-align: middle;
 }
 .reason-item span{
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-align: center;
-  vertical-align: middle;
+}
+.advantages{
+	display: flex;
+	width: 1200px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
 }
 .advantages-item{
-	float: left;
+	display: block;
 	width: 310px;
 	padding: 160px 45px 82px 45px;
+	text-align: center;
 }
 .advantages-item:last-child{
 	margin-right: 0;
@@ -128,18 +136,21 @@ margin-right: 240px;
   text-align: center; 
   vertical-align: middle;
 }
-.advantages-item img {
-  vertical-align: middle;
-}
 .advantages-item p{
   font-size: 14px;
   color: rgb(0, 0, 0);
   font-weight:normal;
   text-align: center; 
 }
+.features-grey{
+	display: flex;
+	width: 1200px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
 .features-grey .reason-item{
-	float:left;
-	width: 400px;
+	display: block;
 	width: 295px;
 	background-color: rgb(238, 238, 238);
 	padding: 50px 50px 60px 55px;
@@ -148,7 +159,7 @@ margin-right: 240px;
 	margin-right: 0;
 }
 .features-grey h2{
-	font-size: 21px;
+  font-size: 21px;
   color: rgb(51, 51, 51);
   font-weight: bold;
   text-align: center;
@@ -187,6 +198,7 @@ margin-right: 240px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
+  line-height: 1.238;
 }
 .search{
 	width: 300px;
@@ -222,34 +234,35 @@ margin-right: 240px;
   text-align: center;
 }
 .footer{
+  display: flex;
   width: 1200px;
   font-size: 0;
   text-align: center;
+  	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
 }
 .site-tag{
-  display: inline-block;
-  vertical-align: middle;
+  display:block;
   width: 400px;
-  font-size: 21px;
 }
 .site-tag a{
+  font-size: 21px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.2;
 }
 .footer-social{
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   width: 400px;
   font-size: 14px;
 }
 .copyright{
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   width: 400px;
-  font-size: 14px;
 }
 .copyright a{
+  font-size: 14px;
   color: rgb(0, 0, 0);
   line-height: 1.857;
   text-decoration: none;
@@ -257,6 +270,7 @@ margin-right: 240px;
 .copyright img {
   vertical-align: middle;
 }
+
 
 /*inner.html*/
 .search-panel{
