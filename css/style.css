@@ -297,17 +297,63 @@ margin-right: 240px;
   line-height: 1.238;
   text-align: left;
   float: left;
-  width: 120px;
-  padding-right:48px;
+  width: 135px;
+  padding-right:31px;
 }
 .sorting{
 	float: left;
-	width: 360px;
-	padding-right: 420px;
-} 
+	width: 780px;
+	font-size: 0;
+}
+.sorting h3{
+	font-size: 12px;
+	line-height: normal;
+    color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: left;
+	background-color: rgb(255,255,255);
+	list-style-type: none;
+	text-decoration: none;
+	float: left;
+	width: 90px;
+}
+	.sorting-type{
+	font-size: 12px;
+	line-height: normal;
+    color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-align: left;
+	background-color: rgb(255,255,255);
+	list-style-type: none;
+	text-decoration: none;
+	width: 780px;
+}
+.sorting-price{
+	color: rgb(129, 179, 210);
+	font-size: 12px;
+	float: left;
+	width: 90px;
+}
+.sorting-view,
+.sorting-rating {
+	color: rgb(177, 177, 177);
+	font-size: 12px;
+	float: left;
+	width: 90px;
+}
 .slider{
 	float: left;
 	width: 111px;
+}
+/*
+
+/*.menu-item{*/
+	width: 240px;
+	text-align: right;
+	float: left;
+}
+/*.menu-item::nth-child(2) {*/
+margin-right: 240px;
 }
 .hotel{
 	width: 1060px;
@@ -321,9 +367,9 @@ margin-right: 240px;
 	padding-right: 31px;
 }
 .about{
-	width: 260px;
+	width: 780px;
 	float: left;
-	padding-right: 520px
+	/*padding-right: 520px*/
 }
 .hotel-type{
     width: 118px;
