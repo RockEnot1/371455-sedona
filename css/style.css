@@ -296,6 +296,7 @@ margin-right: 240px;
   font-weight: bold;
   line-height: 1.238;
   text-align: left;
+  vertical-align: bottom;
   float: left;
   width: 135px;
   padding-right:31px;
@@ -321,7 +322,7 @@ margin-right: 240px;
 	font-size: 12px;
 	line-height: normal;
     color: rgb(0, 0, 0);
-	vertical-align: middle;
+	vertical-align: bottom;
 	text-align: left;
 	background-color: rgb(255,255,255);
 	list-style-type: none;
@@ -345,16 +346,6 @@ margin-right: 240px;
 	float: left;
 	width: 111px;
 }
-/*
-
-/*.menu-item{*/
-	width: 240px;
-	text-align: right;
-	float: left;
-}
-/*.menu-item::nth-child(2) {*/
-margin-right: 240px;
-}
 .hotel{
 	width: 1060px;
 	border-color: rgb(229, 229, 229);
@@ -369,7 +360,6 @@ margin-right: 240px;
 .about{
 	width: 780px;
 	float: left;
-	/*padding-right: 520px*/
 }
 .hotel-type{
     width: 118px;
