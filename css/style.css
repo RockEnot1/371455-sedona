@@ -6,17 +6,11 @@ body{
     padding: 0;
     color: rgb(254, 254, 254);
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .container{
 	width: 1200px;
 	margin:0 auto;
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2); 
 }
-
 .navigation{
 	width:1200px;
 }
@@ -274,32 +268,59 @@ body{
 
 /*inner.html*/
 .search-panel{
-	width: 1200px;
-	min-height: 220px;
+    width: 1060px;
+    font-size: 0;
+    /*text-align: center;*/
+    padding:30px 70px;
 	background-image: url(../img/background-inner.jpg);
 }
- .search-panel h2{
+.search-form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+}
+ .infrastructure{
+ 	display: block;
+	width: 255px;
+	/*text-align: right;*/
+}
+ .search-type{
+ 	display: block;
+ 	width: 150px;
+ 	margin-right: 335px;
+ }
+ .search-item{
+ 	display: block;
+ 	width: 320px;
+ }
+/* .search-item input{
+ 	width: 100px
+ 	border-color: rgb(255, 255, 255);
+ 	border:2px;
+ }*/
+ .search-form h2{
   font-size: 16px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.313;
   text-align: left;
  }
- .search-panel label{
+ .search-form label{
   font-size: 14px;
   color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: left;
  }
- .search-item{
-	width: 300px;
-	text-align: right;
-	float: left;
-}
-.search-item::nth-child(2) {
-    margin-right: 300px;
-}
+
+
 .finded {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
 	width: 1060px;
 	background-color: rgb(255, 255, 255);
 	padding: 40px 70px;
@@ -311,89 +332,101 @@ body{
   line-height: 1.238;
   text-align: left;
   vertical-align: bottom;
-  float: left;
   width: 135px;
-  padding-right:31px;
+  padding-right:30px;
 }
 .sorting{
-	float: left;
 	width: 780px;
 	font-size: 0;
 }
-.sorting h3{
+.sorting-item h3{
 	font-size: 12px;
 	line-height: normal;
     color: rgb(0, 0, 0);
 	vertical-align: middle;
 	text-align: left;
-	background-color: rgb(255,255,255);
+	/*background-color: rgb(255,255,255);*/
 	list-style-type: none;
 	text-decoration: none;
-	float: left;
-	width: 90px;
+}
+.sorting-item{
+	display: flex;
+	width: 785px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
 }
 	.sorting-type{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: left;
 	font-size: 12px;
 	line-height: normal;
     color: rgb(0, 0, 0);
-	vertical-align: bottom;
-	text-align: left;
-	background-color: rgb(255,255,255);
+	/*vertical-align: bottom;*/
+	/*text-align: left;*/
+	/*background-color: rgb(255,255,255);*/
 	list-style-type: none;
 	text-decoration: none;
-	width: 780px;
+	width: 675px;
 }
 .sorting-price{
 	color: rgb(129, 179, 210);
 	font-size: 12px;
-	float: left;
-	width: 90px;
+	width: 80px;
 }
 .sorting-view,
 .sorting-rating {
 	color: rgb(177, 177, 177);
 	font-size: 12px;
-	float: left;
-	width: 90px;
+	width: 80px;
 }
 .slider{
-	float: left;
-	width: 111px;
+	width: 110px;
 }
+
+
 .hotel{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: left;
 	width: 1060px;
-	border-color: rgb(229, 229, 229);
-	border-width: 3px;
-	padding: 30px  70px; 
+	padding: 30px 70px; 
 }
 .image{
-	float: left;
 	width: 135px;
-	padding-right: 31px;
+	padding-right: 30px;
 }
-.about{
-	width: 780px;
-	float: left;
+.about-hotel{
+	display: flex;
+	width: 785px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: left;
 }
 .hotel-type{
-    width: 118px;
-    float: left;
-    margin-right: 8px;
+    width: 110px;
 }
 .price{
-    width: 134px;
-    float: left;
+    width: 140px;
+    margin-left: 5px;
 }
 .price a{
-	box-shadow: 0 0 20px;
+	box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25); 
 }
 .rating{
-	float: left;
-	width: 111px;
+	width: 95px;
 	background-color: rgb(242, 242, 242);
+	padding-left: 15px;
 }
 .about h2{
-  font-size: 20px;
+  font-size: 21px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.238;
@@ -412,21 +445,21 @@ body{
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
  }
  .btn-blue{
  	background-color: rgb(129, 179, 210);
  	text-decoration: none;
- 	padding: 7px 15px;
+ 	padding: 4px 16px;
  }
  .btn-brown{
  	background-color: rgb(118, 99, 87);
  	text-decoration: none;
- 	padding: 7px 15px;
+ 	padding: 4px 15px;
  }
 .rating span{
   font-size: 14px;
   color: rgb(102, 102, 102);
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 }
