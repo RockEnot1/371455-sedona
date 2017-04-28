@@ -12,7 +12,7 @@ body{
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2); 
 }
 .navigation{
-	/*width:1200px;*/
+	position: relative;
 }
 .nav-list {
 	font-size: 14px;
@@ -52,10 +52,18 @@ padding-right:70px;
 box-sizing: border-box;
 text-align: right;
 }
+.logo{
+	position: absolute;
+	top: 0;
+left: 50%;
+transform: translateX(-50%);
+z-index: 2;
+}
 
 .photo{
 	width:1200px; 
 	position: relative;
+	z-index: 1;
 }
 .tagline{
 	width: 600px;
@@ -238,9 +246,11 @@ text-align: right;
   width: 1200px;
   font-size: 0;
   text-align: center;
+  vertical-align: middle;
   	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
+	padding-top: 35px;
 }
 .site-tag{
   display:block;
@@ -276,7 +286,7 @@ text-align: right;
 .search-panel{
     width: 1200px;
     font-size: 0;
-    padding-top: 15px;
+    padding-top: 16px;
 	background-image: url(../img/background-inner.jpg);
 	min-height: 203px;
 }
@@ -294,19 +304,19 @@ text-align: right;
 }
  .search-type{
  	display: block;
- 	width: 480px;
+ 	width: 390px;
  }
  .search-item{
  	display: block;
  	width: 320px;
+ 	text-align: center;
+ 	padding-left: 90px;
  }
 .value{
 	border: 2px solid #ffffff;
 	width: 314px;
 	padding:5px 0;
 	color: rgb(255, 255, 255);
-    background-image: none; 
-    background-color: transparent;
     position: relative;
     font-size: 14px;
     line-height: 1.5;
@@ -318,7 +328,7 @@ content:"";
 position:absolute;
 width:1px;
 height: 20px;
-right: 50%;
+right: 49%;
 background-color: #ffffff;
 
 }
@@ -334,15 +344,16 @@ background-color: #ffffff;
   }
 
  .search-item input[type="submit"]{
- 	width: 135px;
- 	padding:7px 0;
+ 	width: 137px;
+ 	padding:8px 0;
  	color: rgb(255, 255, 255);
     background-image: none; 
     background-color: transparent;
     position: absolute;
  	border:2px solid #ffffff;
- 	margin-top: 50px;
+ 	margin-top: 52px;
  	text-align: center;
+ 	left:85px;
  }
  .search-form h2{
   font-size: 16px;
@@ -351,6 +362,7 @@ background-color: #ffffff;
   line-height: 1.313;
   text-align: left;
  }
+
  .search-form label{
   font-size: 14px;
   color: rgb(255, 255, 255);
@@ -367,7 +379,9 @@ background-color: #ffffff;
 	text-align: center;
 	width: 1060px;
 	background-color: rgb(255, 255, 255);
-	padding: 40px 70px;
+	padding: 9px 70px;
+	vertical-align: middle;
+	border-bottom: 1px solid rgb(229, 229, 229);
 }
 .number-finded h2{
   font-size: 21px;
@@ -410,9 +424,6 @@ background-color: #ffffff;
 	font-size: 12px;
 	line-height: normal;
     color: rgb(0, 0, 0);
-	/*vertical-align: bottom;*/
-	/*text-align: left;*/
-	/*background-color: rgb(255,255,255);*/
 	list-style-type: none;
 	text-decoration: none;
 	width: 675px;
@@ -430,30 +441,31 @@ background-color: #ffffff;
 }
 .sorting-view a,
 .sorting-rating a{
-	text-decoration: underline;
-    text-decoration-style: dotted;
-	text-decoration-color: rgb(129,179,210);
-	box-shadow: 1px 1px 0 0 rgba(255,255,255,1);
-	background:linear-gradient (to right, #0a9800, #50b431); 
-}
+	border-bottom:2px dotted rgb(129, 179, 210);
+	}
 
 .slider{
 	width: 110px;
 }
-
-
 .hotel{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
 	text-align: left;
-	width: 1060px;
-	padding: 30px 70px; 
-}
+	width: 1056px;
+	padding: 29px 72px; 
+	border-bottom:1px solid rgb(229, 229, 229);
+}	
 .image{
 	width: 135px;
 	padding-right: 30px;
+}
+.about{
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
 }
 .about-hotel{
 	display: flex;
@@ -474,9 +486,24 @@ background-color: #ffffff;
 	box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25); 
 }
 .rating{
-	width: 95px;
+	font-size: 0;
+
+}
+.rating span{
+	width: 100px;
 	background-color: rgb(242, 242, 242);
-	padding-left: 15px;
+	display: inline-block;
+	vertical-align: bottom;
+
+}
+i{
+   display: inline-block;
+   background-image: url(../img/two-star.png);
+   width: 21px;
+   height: 17px;
+   margin-top: 0;
+   margin-bottom:60px;
+   vertical-align: top;
 }
 .about h2{
   font-size: 21px;
@@ -484,8 +511,8 @@ background-color: #ffffff;
   font-weight: bold;
   line-height: 1.238;
   text-align: left;
-  margin:0;
-  padding: 0;
+  /*margin:0;
+  padding: 0;*/
 }
 .about span{
   font-size: 14px;
@@ -499,16 +526,17 @@ background-color: #ffffff;
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
+  margin-top: 20px;
  }
  .btn-blue{
  	background-color: rgb(129, 179, 210);
  	text-decoration: none;
- 	padding: 4px 16px;
+ 	padding: 4px 18px;
  }
  .btn-brown{
  	background-color: rgb(118, 99, 87);
  	text-decoration: none;
- 	padding: 4px 15px;
+ 	padding: 4px 19px;
  }
 .rating span{
   font-size: 14px;
