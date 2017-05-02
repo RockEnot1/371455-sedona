@@ -5,6 +5,7 @@
     <title> City of Sedona </title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="container">
@@ -57,17 +58,23 @@
           </label>
         </div>
         <div class="search-item">
-        <h2>Стоимость в сутки (Р):</h2>
-          <div class="value">
-            <span class="minimum">От 0</span>
-            <span class="maximum">До 3000</span>
+          <div class="search-title">Стоимость в сутки (Р):
           </div>
-          <div class="search-slider">
-            <!-- <form action="slider-control.php" method="post"> -->
-              <!-- <input type="range" min="0" max="3000" step="1" name="rating"> -->
-              <input type="submit" value="ПОКАЗАТЬ">
-            <!-- </form> -->
-          </div>    
+          <div class="value">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar">
+              </div>
+            </div>
+            <div class="range-toggle range-toggle-min">
+            </div>
+            <div class="range-toggle range-toggle-max">
+            </div>
+          </div> 
+          <button class="btn-transparent" type="submit">Показать </button>   
         </div>
         </form>
       </section>
@@ -81,7 +88,7 @@
               <h3>Сортировка:</h3>
               <ul class="sorting-type">
                 <li class="sorting-price">
-                <a name="#">По цене<a>
+                <a name="#">По цене</a>
                 </li>
                 <li class="sorting-view">
                 <a name="#">По типу</a>

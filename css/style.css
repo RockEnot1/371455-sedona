@@ -267,19 +267,99 @@ z-index: 2;
   width: 400px;
   font-size: 14px;
 }
+.social-btn{
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height:48px;
+	font-size: 0;
+	background-color: #81b3d2;
+	position: relative;
+}
+.social-btn::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+}
+.social-btn:hover{
+	background-color: #669ec0;
+}
+.social-btn:active{
+	background-color: #5496bd;
+}
+.social-btn-twit::before {
+    width: 17px;
+    height: 15px;
+    background-position: -5px -495px;
+}
+.social-btn-fb::before {
+    width: 10px;
+    height: 19px;
+    background-position: -5px -344px;
+}
+.social-btn-yt::before {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -469px;
+}
+
+
 .copyright{
   display: block;
   width: 400px;
+  font-size: 0;
 }
-.copyright a{
+.copyright span{
   font-size: 14px;
   color: rgb(0, 0, 0);
   line-height: 1.857;
   text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 5px;
 }
-.copyright img {
+.academy-btn{
+	display: inline-block;
+	vertical-align: top;
+	width: 113px;
+	height:39px;
+	font-size: 0;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+}
+.academy-btn::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	left:55%;
+	transform: translate(-50%, -50%);
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+    width: 113px;
+    height: 39px;
+    background-position: -5px -54px;
+}
+.academy-btn:hover{
+    width: 113px;
+    height: 39px;
+    background-position: -5px -103px;
+}
+.academy-btn:active{
+    width: 113px;
+    height: 39px;
+    background-position: -5px -54px;
+}
+
+/*.copyright img {*/
   vertical-align: middle;
 }
+
 
 
 /*inner.html*/
@@ -304,57 +384,118 @@ z-index: 2;
 }
  .search-type{
  	display: block;
- 	width: 390px;
+ 	width: 380px;
  }
  .search-item{
  	display: block;
- 	width: 320px;
+ 	width: 330px;
  	text-align: center;
  	padding-left: 90px;
  }
+ .search-title{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.313;
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 15px;
+ }
 .value{
 	border: 2px solid #ffffff;
+	border-radius: 2px;
 	width: 314px;
-	padding:5px 0;
-	color: rgb(255, 255, 255);
-    position: relative;
-    font-size: 14px;
-    line-height: 1.5;
-    display: flex;
-    text-align: center;
+	height: 32px;
+	margin-top: 10px;
+	margin-left:10px;
+	font-size: 0;
+	position: relative;
 }
-.value::before {
-content:"";
-position:absolute;
-width:1px;
-height: 20px;
-right: 49%;
-background-color: #ffffff;
+.value::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.value label{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.min-price,
+.max-price{
+	width: 90px;
+	padding-left: 55px;
+	padding-top: 2px;
+}
+.value input{
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;	
+}
 
-}
-.minimum{
-	width: 50%;
-}
-.maximum{
-	width: 50%;
-}
-
- .search-slider {
+.range-controls {
   position: relative;
-  }
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle:hover {
+  background: #1c4f80;
+}
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 6px 33px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
 
- .search-item input[type="submit"]{
- 	width: 137px;
- 	padding:8px 0;
- 	color: rgb(255, 255, 255);
-    background-image: none; 
-    background-color: transparent;
-    position: absolute;
- 	border:2px solid #ffffff;
- 	margin-top: 52px;
- 	text-align: center;
- 	left:85px;
- }
  .search-form h2{
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -544,3 +685,98 @@ i{
   line-height: 1.5;
   text-align: center;
 }
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-calendar-click {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+
+.sprite-calendar-peace {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -37px;
+}
+
+.sprite-calendar-pointing {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -69px;
+}
+
+.sprite-empty-block {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -101px;
+}
+
+.sprite-empty-peace {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -133px;
+}
+
+.sprite-empty-pointing {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -165px;
+}
+
+.sprite-face-click {
+    width: 47px;
+    height: 48px;
+    background-position: -5px -197px;
+}
+
+.sprite-face-peace {
+    width: 47px;
+    height: 48px;
+    background-position: -5px -255px;
+}
+
+.sprite-face-point {
+    width: 47px;
+    height: 48px;
+    background-position: -5px -313px;
+}
+
+.sprite-mark-block {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -371px;
+}
+
+.sprite-mark-peace {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -403px;
+}
+
+.sprite-mark-pointing {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -435px;
+}
+
+.sprite-tube-click {
+    width: 46px;
+    height: 48px;
+    background-position: -5px -467px;
+}
+
+.sprite-tube-peace {
+    width: 46px;
+    height: 48px;
+    background-position: -5px -525px;
+}
+
+.sprite-tube-point {
+    width: 46px;
+    height: 48px;
+    background-position: -5px -583px;
+}
+
