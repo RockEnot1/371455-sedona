@@ -354,22 +354,18 @@ z-index: 2;
     width: 113px;
     height: 39px;
     background-position: -5px -54px;
+    background-color: rgb(255, 255, 255);
 }
-.academy-btn:hover{
+.academy-btn:hover:before{
     width: 113px;
     height: 39px;
     background-position: -5px -103px;
 }
-.academy-btn:active{
+.academy-btn:active:before{
     width: 113px;
     height: 39px;
-    background-position: -5px -54px;
+    background-position: -5px -5px;
 }
-
-/*.copyright img {*/
-  vertical-align: middle;
-}
-
 
 
 /*inner.html*/
@@ -386,6 +382,41 @@ z-index: 2;
 	flex-direction: row;
 	justify-content: flex-start;
 }
+input[type="checkbox"]{
+	display: none;
+}
+input[type="checkbox"]+label{
+	display: block;
+	position: relative;
+	margin-top:25px;
+	line-height: 21px;
+	padding-left: 40px;
+}
+input[type="checkbox"] + label::before{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;	
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type="checkbox"]:checked+label::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left:0;
+    width: 26px;
+    height: 22px;
+    background-position: -5px -405px;
+}
+
  .infrastructure{
  	display: block;
 	width: 330px;
@@ -595,9 +626,64 @@ z-index: 2;
 	border-bottom:2px dotted rgb(129, 179, 210);
 	}
 
-.slider{
+.small-slider{
 	width: 110px;
+	display: inline-block;
+	vertical-align: top;
+	height:10px;
+	font-size: 0;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	margin-left: 20px;
+	margin-top: 10px;
 }
+ .small-slider-up::before{
+	content: "";
+	position: absolute;
+    width: 11px;
+    height: 10px;
+    background-position: -5px -85px;
+    top:50%;
+	left:70%;
+	transform: translate(-50%, -50%);
+	background-image: url(../img/small-sprite.png);
+	background-repeat: no-repeat;
+}
+.small-slider-up:hover:before{
+    width: 11px;
+    height: 10px;
+    background-position: -5px -105px;
+}
+}
+.small-slider-up:active:before{
+	width: 11px;
+    height: 10px;
+    background-position: -5px -65px;
+}
+ .small-slider-down::before{
+	content: "";
+	position: absolute;
+    width: 11px;
+    height: 10px;
+    background-position: -5px -25px;
+    top:50%;
+	left:90%;
+	transform: translate(-50%, -50%);
+	background-image: url(../img/small-sprite.png);
+	background-repeat: no-repeat;
+}
+.small-slider-down:hover:before{
+    width: 11px;
+    height: 10px;
+    background-position: -5px -45px;
+}
+
+.small-slider-down:active:before{
+	width: 11px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
 .hotel{
 	display: flex;
 	flex-direction: row;
@@ -642,6 +728,10 @@ z-index: 2;
 	background-color: rgb(242, 242, 242);
 	display: inline-block;
 	vertical-align: bottom;
+	font-size: 14px;
+  color: rgb(102, 102, 102);
+  line-height: 1.5;
+  text-align: center;
 }
 i{
    display: inline-block;
@@ -678,7 +768,7 @@ i{
  .btn-blue{
  	background-color: rgb(129, 179, 210);
  	text-decoration: none;
- 	padding: 4px 18px;
+ 	/*padding: 4px 18px;*/
  	position: relative;
  }
  .btn-blue::before{
@@ -690,11 +780,12 @@ i{
 }
 .btn-blue:active{
 	background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.302);
 }
  .btn-brown{
  	background-color: rgb(118, 99, 87);
  	text-decoration: none;
- 	padding: 4px 19px;
+ 	/*padding: 4px 19px;*/
  	position: relative;
  	box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25);
  }
@@ -707,10 +798,61 @@ i{
 }
 .btn-brown:active{
 	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.302);
 }
-.rating span{
-  font-size: 14px;
-  color: rgb(102, 102, 102);
-  line-height: 1.5;
-  text-align: center;
+
+
+
+
+
+.sprite-calendar-click {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -152px;
 }
+
+.sprite-calendar-peace {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -184px;
+}
+
+.sprite-calendar-pointing {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -216px;
+}
+
+.sprite-empty-block {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -248px;
+}
+
+.sprite-empty-peace {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -280px;
+}
+
+.sprite-empty-pointing {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -312px;
+}
+
+
+
+.sprite-mark-block {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -373px;
+}
+
+.sprite-mark-peace {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -405px;
+}
+
+
