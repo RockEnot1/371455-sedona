@@ -11,6 +11,9 @@ body{
 	margin:0 auto;
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2); 
 }
+.header{
+	position: relative;
+}
 .navigation{
 	position: relative;
 }
@@ -272,6 +275,7 @@ z-index: 2;
 	align-items: center;
 	justify-content: flex-start;
 	padding-top: 35px;
+	padding-bottom: 35px;
 }
 .site-tag{
   display:block;
@@ -282,6 +286,7 @@ z-index: 2;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.2;
+  text-decoration: none;
 }
 .footer-social{
   display: block;
@@ -415,7 +420,7 @@ input[type="checkbox"] + label::before{
     top: 0;
     left: 0;
 }
-input[type="checkbox"]:checked+label::after{
+input[type="checkbox"]:checked + label::after{
     content: "";
     position: absolute;
     background-image: url(../img/sprite.png);
@@ -427,6 +432,41 @@ input[type="checkbox"]:checked+label::after{
     background-position: -5px -405px;
 }
 
+input[type="checkbox"] + label::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left:0;
+    width: 26px;
+    height: 22px;
+    background-position: -5px -280px;
+}
+
+
+input[type="checkbox"]:disabled + label::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left:0;
+    width: 26px;
+    height: 22px;
+    background-position: -5px -248px;
+}
+input[type="checkbox"]:disabled:checked + label::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left:0;
+    width: 26px;
+    height: 22px;
+    background-position: -5px -373px;
+}
  .infrastructure{
  	display: block;
 	width: 330px;
@@ -698,24 +738,28 @@ input[type="checkbox"]:checked+label::after{
     height: 10px;
     background-position: -5px -45px;
 }
-
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .small-slider-down:active:before{
 	width: 11px;
     height: 10px;
     background-position: -5px -5px;
 }
-
+.small-slider-down:link:before{
+	width: 11px;
+    height: 10px;
+    background-position: -5px -5px;
+}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hotel{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
 	text-align: left;
 	width: 1056px;
 	padding: 29px 72px; 
 	border-bottom:1px solid rgb(229, 229, 229);
-}	
+}
 .image{
 	width: 135px;
 	padding-right: 30px;
@@ -724,15 +768,14 @@ input[type="checkbox"]:checked+label::after{
 	font-size: 0;
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
 }
 .about-hotel{
 	display: flex;
 	width: 785px;
 	flex-direction: row;
-	align-items: center;
 	justify-content: flex-start;
 	text-align: left;
+	padding-top: 6px;
 }
 .hotel-type{
     width: 110px;
@@ -743,16 +786,17 @@ input[type="checkbox"]:checked+label::after{
 }
 .rating{
 	font-size: 0;
+	text-align: right;
 }
 .rating span{
 	width: 100px;
 	background-color: rgb(242, 242, 242);
 	display: inline-block;
-	vertical-align: bottom;
+	/*vertical-align: middle;*/
 	font-size: 14px;
-  color: rgb(102, 102, 102);
-  line-height: 1.5;
-  text-align: center;
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+    text-align: center;
 }
 i{
    display: inline-block;
@@ -771,7 +815,6 @@ i{
   line-height: 1.238;
   text-align: left;
   margin:0;
-  padding-bottom:25px;
 }
 .about h2:hover{
 	color: #81b3d2;
@@ -792,13 +835,15 @@ i{
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
-  margin-top: 20px;
+  vertical-align: bottom;
+  /*margin-top: 20px;*/
  }
  .btn-blue{
  	background-color: rgb(129, 179, 210);
  	text-decoration: none;
- 	/*padding: 4px 18px;*/
+ 	padding: 4px 18px;
  	position: relative;
+
  }
  .btn-blue::before{
 	content: "";
@@ -814,9 +859,9 @@ i{
  .btn-brown{
  	background-color: rgb(118, 99, 87);
  	text-decoration: none;
- 	/*padding: 4px 19px;*/
+ 	padding: 4px 19px;
  	position: relative;
- 	box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25);
+ 	/*box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25);*/
  }
  .btn-brown::before{
 	content: "";
