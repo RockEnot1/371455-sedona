@@ -743,7 +743,6 @@ input[type="checkbox"]:checked+label::after{
 }
 .rating{
 	font-size: 0;
-
 }
 .rating span{
 	width: 100px;
@@ -771,8 +770,8 @@ i{
   font-weight: bold;
   line-height: 1.238;
   text-align: left;
-  /*margin:0;
-  padding: 0;*/
+  margin:0;
+  padding-bottom:25px;
 }
 .about h2:hover{
 	color: #81b3d2;
