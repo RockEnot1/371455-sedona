@@ -738,18 +738,16 @@ input[type="checkbox"]:disabled:checked + label::after{
     height: 10px;
     background-position: -5px -45px;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .small-slider-down:active:before{
 	width: 11px;
     height: 10px;
     background-position: -5px -5px;
 }
-.small-slider-down:link:before{
+.active::before{
 	width: 11px;
     height: 10px;
     background-position: -5px -5px;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hotel{
 	display: flex;
 	flex-direction: row;
@@ -757,12 +755,15 @@ input[type="checkbox"]:disabled:checked + label::after{
 	justify-content: flex-start;
 	text-align: left;
 	width: 1056px;
-	padding: 29px 72px; 
+	padding: 0 72px; 
+	padding-top:28px;
+	padding-bottom: 25px;
 	border-bottom:1px solid rgb(229, 229, 229);
 }
 .image{
 	width: 135px;
 	padding-right: 30px;
+	padding-top: 5px;
 }
 .about{
 	font-size: 0;
@@ -792,7 +793,6 @@ input[type="checkbox"]:disabled:checked + label::after{
 	width: 100px;
 	background-color: rgb(242, 242, 242);
 	display: inline-block;
-	/*vertical-align: middle;*/
 	font-size: 14px;
     color: rgb(102, 102, 102);
     line-height: 1.5;
@@ -836,14 +836,14 @@ i{
   line-height: 1.5;
   text-align: center;
   vertical-align: bottom;
-  /*margin-top: 20px;*/
  }
  .btn-blue{
+ 	display: inline-block;
+ 	margin-top: 13px;
  	background-color: rgb(129, 179, 210);
  	text-decoration: none;
- 	padding: 4px 18px;
+ 	padding: 4px 17px;
  	position: relative;
-
  }
  .btn-blue::before{
 	content: "";
@@ -857,11 +857,12 @@ i{
     color: rgba(255, 255, 255, 0.302);
 }
  .btn-brown{
+ 	display: inline-block;
+ 	margin-top: 13px;
  	background-color: rgb(118, 99, 87);
  	text-decoration: none;
- 	padding: 4px 19px;
+ 	padding: 4px 18px;
  	position: relative;
- 	/*box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.25);*/
  }
  .btn-brown::before{
 	content: "";
@@ -895,38 +896,6 @@ i{
     width: 21px;
     height: 22px;
     background-position: -5px -216px;
-}
-
-.sprite-empty-block {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -248px;
-}
-
-.sprite-empty-peace {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -280px;
-}
-
-.sprite-empty-pointing {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -312px;
-}
-
-
-
-.sprite-mark-block {
-    width: 26px;
-    height: 22px;
-    background-position: -5px -373px;
-}
-
-.sprite-mark-peace {
-    width: 26px;
-    height: 22px;
-    background-position: -5px -405px;
 }
 
 
