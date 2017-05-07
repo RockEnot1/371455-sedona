@@ -106,30 +106,38 @@
        </section>
        <section class="interactive">
          <div class="content-map">
-           <div id="yandex.map">
-           </div>
+         <!--   <div id="yandex.map">
+           </div> -->
          </div>
-        <!-- <img src="img/map.jpg" width="1200" height="593" alt="Карта"> -->
-      <!-- popup window -->
+
         <div class="model-content">
           <form action="https://echo.htmlacademy.ru" method="post" class="model-content-form">
-            <label class="enter-date">Дата заезда:</label>
-            <input type="text" name="date" id="enter-date" placeholder="24 АПРЕЛЯ 2017">
 
-            <label for="exit-date">Дата выезда:</label>
-            <input type="text" name="date" id="exit-date" placeholder="4 ИЮЛЯ 2017">
+            <div class="in-form">
+                <label for="enter-date">Дата заезда:</label>
+                <input type="text" name="date" id="enter-date" placeholder="24 АПРЕЛЯ 2017">
+                <span class="calendar"></span>
 
-            <label for="adult">Взрослые</label>
-            <input type="number" name="number" placeholder="2" id="adult">
-            <button>+</button>
-            <button>-</button>
+                <label for="exit-date">Дата выезда:</label>
+                <input type="text" name="date" id="exit-date" placeholder="4 ИЮЛЯ 2017">
+                <span class="calendar"></span>
+            </div>
+            <div class="in-form clearfix">
+              <div class="adult-group">  
+                <label for="adult">Взрослые:</label>
+                <button class="minus"></button>
+                <input type="number" name="number" placeholder="2" id="adult">
+                <button class="plus"></button> 
+              </div>
 
-            <label for="children">Дети</label>
-            <input type="number" name="number" placeholder="0" id="children">
-            <button>+</button>
-            <button>-</button>
-
-            <input type="submit" value="НАЙТИ">
+              <div class="children-group"> 
+                <label for="children">Дети:</label>
+                <button class="minus"></button>
+                <input type="number" name="number" placeholder="0" id="children">
+                <button class="plus"></button>
+              </div>
+            </div>
+            <button class="content-btn" type="submit">Найти</button>
           </form>
          <!--  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button> -->
         </div>

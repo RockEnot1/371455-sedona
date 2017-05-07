@@ -240,7 +240,7 @@ text-align: right;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 24px;
   margin-bottom: 25px;
 }
 .more p{
@@ -249,7 +249,7 @@ text-align: right;
   font-weight: normal;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 .search a{
   font-size: 21px;
@@ -281,64 +281,174 @@ text-align: right;
 	width: 570px;
 	background-color: rgb(255, 255, 255);
 	position: absolute;
-	bottom:50%;
+	bottom:38%;
 	left:50%;
 	margin-left: -285px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 .model-content-form{
+	margin: 0;
+	padding:0;
 	width: 460px;
-	padding: 55px;
+	margin: 55px 57px;
+	background-color: #ffffff;
+	text-align: left;
+	font-weight: 700;
 }
 .model-content-form label{
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-align: left;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 26px;
+	color:rgb(0, 0, 0);
+	font-weight: bold;
+	padding-top: 7px;
 }
-.model-content-form input[type="text"]{
+.in-form > label{
+	width: 100px;
+}
+.in-form input[type="text"]{
+	font-family: inherit;
+	font-weight: bold;
 	margin: 0;
-	margin-bottom: 29px;
-	margin-left: 25px;
-	width: 339px; 
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: left;
+	padding:0;
+	margin-bottom: 30px;
+	margin-left: 13px;
+	width: 311px; 
+	padding: 10px 10px;
+	padding-right: 25px;
     background-color: #f2f2f2;
     line-height: 26px;
+    border: none;
+    outline: none;
 }
-.model-content-form input[type="text"]:hover{
+.in-form input[type="text"]:hover{
 	background-color: rgb(235, 235, 235);
 }
-.model-content-form input[type="text"]:focus{
+.in-form input[type="text"]:focus{
+	width: 308px;
 	background-color: rgb(255, 255, 255);
 	border: 2px solid #e5e5e5;
 }
-
-.model-content-form input[type="number"]{
+.calendar{
+	position: absolute;
+	display: block;
+	width: 21px;
+	height: 22px;
+	background-position: -5px -184px;
+	top:63px;
+	right: 65px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+}
+.calendar:hover{
+background-repeat: no-repeat;
+width: 21px;
+    height: 22px;
+    background-position: -5px -216px;
+}
+.calendar:active{
+background-repeat: no-repeat;
+width: 21px;
+    height: 22px;
+    background-position: -5px -152px;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.in-form input[type="number"]{
 	margin: 0;
-	width: 114px; 
+	padding: 0;
+	font-family: inherit;
+	width: 38px; 
+	height: 38px;
     font-size: 14px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: center;
     background-color: #f2f2f2;
     line-height: 1.2;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+    margin-left:40px;
 }
-/*sprite!!!*/
-
-.model-content input[type="submit"]{
-  /*display: none;*/
-  display: block;
-  width: 460px;
-  font-size: 21px;
-  color:rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.238;
-  text-align: center;
-  background-color: #81b3d2;
+.in-form input[type="number"]:hover{
+	background-color: rgb(235, 235, 235);
 }
-
+.in-form input[type="number"]:focus{
+	width: 36px;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid #e5e5e5;
+}
+.adult-group{
+	float: left;
+	position: relative;
+	padding: 0
+}
+.children-group{
+	float: right;
+	position: relative;
+}
+.children-group label{
+margin-right: 20px;
+}
+.minus{
+	   background-image: url(../img/buttonsprite.png);
+	   background-repeat: no-repeat;
+	   width: 12px;
+       height: 3px;
+       background-position: -10px -33px;
+       border: 0;
+       outline: none;
+       background-color: #f2f2f2;
+       
+}
+.plus{
+	  background-image: url(../img/buttonsprite.png);
+	  background-repeat: no-repeat;
+      width: 11px;
+      height: 11px;
+      background-position: -10px -110px;
+      border: none;
+      outline: none;
+      background-color: #f2f2f2;
+}
+.minus:hover{
+    background-position: -10px -56px;
+}
+.minus:active{
+	    background-position: -10px -10px;
+}
+.plus:hover{
+	    background-position: -10px -141px;
+}
+.plus:active{
+	    background-position: -10px -79px;
+}
+.content-btn {	
+	padding-top: 16px;
+	padding-bottom: 16px;	
+	width: 458px;
+	background-color: #81b3d2;
+	border: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 21px;
+    font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: 700;
+	cursor: pointer;	
+}	
+.content-btn:hover {
+	background-color: #669ec0;
+}	
+.content-btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.302)
+}	
 .footer{
   display: flex;
   width: 1200px;
@@ -952,22 +1062,6 @@ i{
 
 
 
-.sprite-calendar-click {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -152px;
-}
 
-.sprite-calendar-peace {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -184px;
-}
-
-.sprite-calendar-pointing {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -216px;
-}
 
 
