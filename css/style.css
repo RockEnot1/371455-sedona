@@ -278,7 +278,34 @@ text-align: right;
 	background-image: url(../img/map.jpg);
 	width: 1200px;
 	height: 593px;
+	/*position: relative;*/
 }
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .model-content{
 	font-size: 0;
 	width: 570px;
@@ -288,6 +315,13 @@ text-align: right;
 	left:50%;
 	margin-left: -285px;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+.model-content-show{
+	display: block;
+	animation: bounce 0,6s;
+}
+.model-error{
+	animation: shake 0,6s;
 }
 .model-content-form{
 	margin: 0;
@@ -312,25 +346,28 @@ text-align: right;
 	width: 100px;
 }
 .in-form input[type="text"]{
-	font-family: inherit;
+	font-size: 14px;
 	font-weight: bold;
+	color:rgb(0, 0, 0);
 	margin: 0;
 	padding:0;
 	margin-bottom: 30px;
 	margin-left: 22px;
-	width: 309px; 
+	width: 305px; 
 	padding: 10px 10px;
 	padding-right: 25px;
     background-color: #f2f2f2;
     line-height: 26px;
     border: none;
     outline: none;
+    border: 2px solid #f2f2f2;
 }
 .in-form input[type="text"]:hover{
 	background-color: rgb(235, 235, 235);
+	border: 2px solid rgb(235, 235, 235);
 }
 .in-form input[type="text"]:focus{
-	width: 308px;
+	width: 304px;
 	background-color: rgb(255, 255, 255);
 	border: 2px solid #e5e5e5;
 }
@@ -383,11 +420,14 @@ margin-right: 27px;
 .adult-group label{
 	margin-right: 40px;
 }
-.in-form input[type="number"]{
+.adult-group input[type="text"],
+.children-group input[type="text"]{
+	    display: inline-block;
+    vertical-align: middle;
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 1.857;
 	color:rgb(0, 0, 0);
 	font-weight: bold;
 	width: 38px; 
@@ -397,45 +437,62 @@ margin-right: 27px;
     border: none;
     outline: none;
     margin-bottom: 30px;
+    border: 2px solid #f2f2f2;
 }
+
 .in-form input[type="number"]:hover{
 	background-color: rgb(235, 235, 235);
+	border: 2px solid #ffffff;
 }
 .in-form input[type="number"]:focus{
-	width: 36px;
+	width: 34px;
 	background-color: rgb(255, 255, 255);
 	border: 2px solid #e5e5e5;
 }
 .minus{
-	   background-image: url(../img/buttonsprite.png);
-	   background-repeat: no-repeat;
-	   width: 12px;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	vertical-align: middle;
+	
+	/*   background-image: url(../img/buttonsprite.png);
+	   background-repeat: no-repeat;*/
+	   /*width: 12px;
        height: 3px;
-       background-position: -10px -33px;
-       border: 0;
+       background-position: -10px -33px;*/
+       border: none;
        outline: none;
        background-color: #f2f2f2;
 }
+/*.minus::before{*/
+width: 12px;
+       height: 3px;
+       background-position: -10px -33px;
+}
 .plus{
-	  background-image: url(../img/buttonsprite.png);
-	  background-repeat: no-repeat;
-      width: 11px;
-      height: 11px;
-      background-position: -10px -110px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 38px;
+	height: 38px;
+	  /*background-image: url(../img/buttonsprite.png);*/
+	  /*background-repeat: no-repeat;*/
+      /*width: 11px;*/
+      /*height: 11px;*/
+      /*background-position: -10px -110px;*/
       border: none;
       outline: none;
       background-color: #f2f2f2;
 }
-.minus:hover{
+/*.minus:hover:before{*/
     background-position: -10px -56px;
 }
-.minus:active{
+/*.minus:active:before{*/
 	    background-position: -10px -10px;
 }
-.plus:hover{
+/*.plus:hover{*/
 	    background-position: -10px -141px;
 }
-.plus:active{
+/*.plus:active{*/
 	    background-position: -10px -79px;
 }
 .content-btn {	
@@ -459,6 +516,8 @@ margin-right: 27px;
 	color: rgba(255, 255, 255, 0.302)
 }	
 .footer{
+	/*position: absolute;
+	top:80%;*/
   display: flex;
   width: 1200px;
   font-size: 0;
@@ -469,7 +528,12 @@ margin-right: 27px;
 	justify-content: flex-start;
 	padding-top: 35px;
 	padding-bottom: 35px;
+	background-color: rgba(255, 255, 255, 0.9);
 }
+.index-page .footer{
+	position: absolute;
+	top:80%;
+	}
 .site-tag{
   display:block;
   width: 400px;

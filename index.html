@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title> City of Sedona </title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/social-likes_birman.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body class="index-page">
     <div class="container">
       <header class="header">
         <nav class="navigation">
@@ -46,7 +47,7 @@
           <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="reason-image">
-          <img src="img/real-city.jpg" width="800" height="256" alt="Real_City">
+          <img src="img/real-city.jpg" width="800" height="258" alt="Real_City">
         </div>
       </section>
 
@@ -105,10 +106,7 @@
          </div>
        </section>
        <section class="interactive">
-         <div class="content-map">
-         <!--   <div id="yandex.map">
-           </div> -->
-         </div>
+         
 
         <div class="model-content">
           <form action="https://echo.htmlacademy.ru" method="post" class="model-content-form">
@@ -129,22 +127,27 @@
               <div class="adult-group">  
                 <label for="adult">Взрослые:</label>
                 <button class="minus"></button>
-                <input type="number" name="number" placeholder="2" id="adult">
+                <input type="text" name="number" placeholder="2" id="adult">
                 <button class="plus"></button> 
               </div>
 
               <div class="children-group"> 
                 <label for="children">Дети:</label>
                 <button class="minus"></button>
-                <input type="number" name="number" placeholder="0" id="children">
+                <input type="text" name="number" placeholder="0" id="children">
                 <button class="plus"></button>
               </div>
             </div>
             <button class="content-btn" type="submit">Найти</button>
           </form>
+
          <!--  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button> -->
         </div>
-      </section>
+        <div class="content-map">
+         <!--   <div id="yandex.map">
+           </div> -->
+         </div>
+     
 
       <footer class="footer">
         <div class="site-tag">
@@ -164,7 +167,8 @@
           </a>
         </div>
       </footer>
-       
+       </section> 
     </div>
+    <script src="js/pop-up.js"></script>
   </body>
 </html>
