@@ -1,6 +1,6 @@
 
 
-var link = document.querySelector(".btn-search");
+var link = document.querySelector(".search");
 var searchForm = document.querySelector(".model-content-form");
 var dateEntry = searchForm.querySelector("#enter-date");
 var form = document.querySelector("form");
