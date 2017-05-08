@@ -1,40 +1,41 @@
-<script>
-      var link = document.querySelector(".btn-search");
 
-      var popup = document.querySelector(".model-content");
 
-      var close = popup.querySelector(".btn-search");
+var link = document.querySelector(".btn-search");
+var searchForm = document.querySelector(".model-content-form");
+var dateEntry = searchForm.querySelector("#enter-date");
+var form = document.querySelector("form");
+var dateDeparture = searchForm.querySelector("#exit-date");
+var children = searchForm.querySelector("#children");
+var adults = searchForm.querySelector("#adult");
 
-      var form = popup.querySelector("form");
-      var text = popup.querySelector("[name=btn-search]");
+link.addEventListener("click", function(event){
+  event.preventDefault();
+  if (searchForm.classList.contains("search-form-visible")) {
+    searchForm.classList.add("model-content-form-invisible");
+    searchForm.classList.remove("model-content-form-visible");
+    searchForm.classList.remove("model-content-form-error");
+  } else {
+    searchForm.classList.add("model-content-form-visible");
+    searchForm.classList.remove("model-content-form-invisible");
+  };
+  dateEntry.focus();
+});
 
-      link.addEventListener("click", function(event){
-        event.preventDefault();
-        popup.classList.add("model-content-show");
-        btn-search.focus();
-      });
+form.addEventListener("submit", function(event) {
+  if (!exitdate.value || !enterdate.value || !children.value || !adult.value) {
+    event.preventDefault();
+    searchForm.classList.remove("model-content-form-error");
+    searchForm.offsetWidth = searchForm.offsetWidth;
+    searchForm.classList.add("model-content-form-error");
+  }
+});
 
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("model-content-show");
-        popup.classList.remove("model-error");
-      });
-
-      form.addEventListener("submit",function(event){
-         if (!text.value) {
-          event.preventDefault();
-          popup.classList.remove("model-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("model-error");
-          console.log("Нужно ввести данные"); 
-        } 
-      })
-       window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("model-content-show")) {
-            popup.classList.remove("model-content-show");
-            popup.classList.remove("model-error");
-          }
-        }
-      });
-</script>
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (searchForm.classList.contains("model-content-form-visible")) {
+      searchForm.classList.remove("model-content-form-visible");
+      searchForm.classList.add("model-content-form-invisible");
+      searchForm.classList.remove("model-content-form-error");
+    }
+  }
+});
