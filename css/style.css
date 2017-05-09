@@ -314,7 +314,7 @@ text-align: right;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
-.model-content-form-invisible {
+/*.model-content-form-invisible {*/
     display: none;
 }
 
@@ -353,17 +353,16 @@ text-align: right;
 	font-weight: bold;
 	color:rgb(0, 0, 0);
 	margin: 0;
-	padding:0;
 	margin-left: 22px;
 	width: 342px; 
-	padding: 10px 10px;
+	padding: 0 10px;
 	padding-right: 25px;
     background-color: #f2f2f2;
     line-height: 26px;
-    border: none;
     outline: none;
     border: 2px solid #f2f2f2;
     box-sizing: border-box;
+    height: 38px;
 }
 .in-form input[type="text"]:hover{
 	background-color: rgb(235, 235, 235);
