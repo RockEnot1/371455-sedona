@@ -304,7 +304,9 @@ body{
     transform: translateX(10px);
   }
 }
-
+.iframe{
+	border: 0;
+}
 .model-content{
 	font-size: 0;
 	width: 570px;
