@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> City of Sedona </title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-mini.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -74,32 +74,25 @@
       </section>
 
       <section class="finded">
-         <div class="number-finded">
-           <h2>Найдено: 3</h2>
-         </div>
+           <h2 class="number-finded">Найдено: 3</h2>
          <div class="sorting">
-            <div class="sorting-item">
               <h3>Сортировка:</h3>
-              <ul class="sorting-type">
-                <li class="sorting-price">
-                <a name="#">По цене</a>
-                </li>
-                <li class="sorting-view">
-                <a name="#">По типу</a>
-                </li>
-                <li class="sorting-rating">
-                <a name="#">По рейтингу</a>
-                </li>
-              </ul>
-            </div>
+              <div class="sorting-type">
+                <a class="sorting-price" name="#">По цене</a>
+                
+                <a class="sorting-view" name="#">По типу</a>
+                
+                <a class="sorting-rating" name="#">По рейтингу</a>
+                
+              </div>
          </div>
          <div class="small-slider">
            <ul>
            <li>
-           <a class="small-slider-up" href="#"></a>
+           <a class="small-slider-up" href="#">Вверх</a>
            </li>
            <li>
-           <a class="small-slider-down active" href="#"></a>
+           <a class="small-slider-down active" href="#">Вниз</a>
            </li>
            </ul>
          </div>
@@ -123,7 +116,7 @@
             </div>
         </div>
         <div class="rating">
-          <i></i><i></i><i></i><i></i>
+          <p>4 звезды<i></i><i></i><i></i><i></i></p>
           <span> Рейтинг: 8,5</span>
         </div>
       </article>
@@ -146,7 +139,7 @@
           </div>
         </div>
         <div class="rating">
-          <i></i><i></i><i></i>
+          <p>3 звезды<i></i><i></i><i></i></p>
           <span> Рейтинг: 8,9</span>
         </div>
       </article>
@@ -169,7 +162,7 @@
           </div>
         </div>
         <div class="rating">
-          <i></i><i></i>
+          <p>2 звезды<i></i><i></i></p>
           <span> Рейтинг: 9,2</span>
         </div>
       </article>
