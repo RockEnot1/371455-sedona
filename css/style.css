@@ -108,8 +108,7 @@ body {
 .features-blue .reason-item {
     width: 400px;
     background-color: rgb(129, 179, 210);
-    padding-top: 48px;
-    /*padding-bottom: 44px;*/
+    padding-top: 56px;
     line-height: 0;
 }
 .features-blue .reason-image {
