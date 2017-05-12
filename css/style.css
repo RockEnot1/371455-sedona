@@ -1073,8 +1073,9 @@ input[type="checkbox"]:disabled:checked + label::after {
     text-align: left;
     width: 1056px;
     padding: 0 72px;
-    padding-top: 28px;
+    padding-top: 25px;
     padding-bottom: 25px;
+    height: 100px;
     border-bottom: 1px solid rgb(229, 229, 229);
 }
 .image {
@@ -1093,7 +1094,7 @@ input[type="checkbox"]:disabled:checked + label::after {
     flex-direction: row;
     justify-content: flex-start;
     text-align: left;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 .hotel-type {
     width: 110px;
@@ -1128,6 +1129,7 @@ i {
     vertical-align: top;
 }
 .about h2 {
+    display: block;
     font-size: 21px;
     color: rgb(0, 0, 0);
     font-weight: bold;
