@@ -108,7 +108,7 @@ body {
 .features-blue .reason-item {
     width: 400px;
     background-color: rgb(129, 179, 210);
-    padding-top: 56px;
+    padding-top: 49px;
     line-height: 0;
 }
 .features-blue .reason-image {
@@ -1097,6 +1097,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 }
 .hotel-type {
     width: 110px;
+    font-size: 0;
 }
 .price {
     width: 140px;
@@ -1130,7 +1131,7 @@ i {
     font-size: 21px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    line-height: 1.238;
+    line-height: 26px;
     text-align: left;
     margin: 0;
 }
@@ -1157,10 +1158,10 @@ i {
 .btn-blue {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 13px;
+    margin-top: 15px;
     background-color: rgb(129, 179, 210);
     text-decoration: none;
-    padding: 4px 17px;
+    padding: 3px 16px;
     position: relative;
 }
 .btn-blue::before {
@@ -1177,10 +1178,10 @@ i {
 .btn-brown {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 13px;
+    margin-top: 15px;
     background-color: rgb(118, 99, 87);
     text-decoration: none;
-    padding: 4px 18px;
+    padding: 3px 16px;
     position: relative;
 }
 .btn-brown::before {
